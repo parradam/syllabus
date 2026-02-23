@@ -1,0 +1,30 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Backend for Syllabus"
+readme = "README.md"
+requires-python = "==3.12.*"
+dependencies = []
+
+[dependency-groups]
+dev = ["mypy==1.19.1", "ruff==0.15.2"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+exclude = []
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D",      # docstrings
+    "TD003",  # todos issue links 
+    "FIX002", # todos resolve
+]
+
+[tool.ruff.lint.per-file-ignores]
+"**/test_*.py" = ["S101"] # disable assert warning for test files
