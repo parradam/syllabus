@@ -4,10 +4,7 @@ version = "0.1.0"
 description = "Backend for Syllabus"
 readme = "README.md"
 requires-python = "==3.12.*"
-dependencies = [
-    "fastapi==0.132.0",
-    "uvicorn==0.41.0",
-]
+dependencies = ["fastapi==0.132.0", "uvicorn==0.41.0"]
 
 [dependency-groups]
 dev = ["mypy==1.19.1", "ruff==0.15.2"]
