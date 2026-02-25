@@ -1,0 +1,10 @@
+dev:
+    npm run dev
+
+check:
+    npx eslint src
+    npx prettier --write src
+
+all:
+    just -f ../backend/justfile dev &
+    just dev

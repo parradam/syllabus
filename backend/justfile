@@ -1,0 +1,6 @@
+dev:
+    source .venv/bin/activate && uvicorn src.main:app --reload
+
+check:
+    ruff check .
+    mypy .
