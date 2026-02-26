@@ -21,6 +21,7 @@ exclude = []
 [tool.ruff.lint]
 select = ["ALL"]
 ignore = [
+    "COM812", # avoid formatter conflicts
     "D",      # docstrings
     "TD003",  # todos issue links 
     "FIX002", # todos resolve
