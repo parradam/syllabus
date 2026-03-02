@@ -44,4 +44,12 @@ hooks = [
     files = "^frontend/.*\\.(js|jsx|ts|tsx)$",
     pass_filenames = false,
   },
+  {
+    id = "typecheck",
+    name = "typecheck",
+    language = "system",
+    entry = "npm run typecheck --prefix frontend",
+    files = "^frontend/.*\\.(ts|tsx)$",
+    pass_filenames = false,
+  },
 ]

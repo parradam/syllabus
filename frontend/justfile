@@ -4,6 +4,7 @@ dev:
 check:
     npx eslint src
     npx prettier --write src
+    npm run typecheck
 
 all:
     just -f ../backend/justfile dev &

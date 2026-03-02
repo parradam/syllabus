@@ -10,7 +10,8 @@
     "lint:fix": "eslint --fix",
     "preview": "vite preview",
     "format": "prettier --check .",
-    "format:write": "prettier --write ."
+    "format:write": "prettier --write .",
+    "typecheck": "tsc --project tsconfig.app.json --noEmit"
   },
   "dependencies": {
     "react": "^19.2.0",
