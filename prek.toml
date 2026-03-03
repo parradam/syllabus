@@ -22,7 +22,7 @@ hooks = [
     id = "mypy",
     name = "mypy",
     language = "system",
-    entry = "mypy backend",
+    entry = "mypy --config-file backend/pyproject.toml backend",
     files = "^backend/.*\\.py$",
     pass_filenames = false,
   },
